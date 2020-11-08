@@ -52,10 +52,10 @@ public class Controller {
             if(selectedRadioButton != null) {
                 String toogleGroupValue = selectedRadioButton.getText();
                 if(toogleGroupValue.equals(nowCorrectAnswer)) {
-                    System.out.println("Верный ответ");
+                    System.out.println("Correct");
                     correctAnswers++;
                 } else
-                    System.out.println("Не верный ответ");
+                    System.out.println("Wrong");
                 if(nowQuestion + 1 == questions.length) {
                     radio_btn_1.setVisible(false);
                     radio_btn_2.setVisible(false);
